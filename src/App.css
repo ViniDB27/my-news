@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+body {
+  background-color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content-body {
+  min-height: 500px;
+  background-color: #f4f1f1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.column-four-news {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.column-main-new {
+  box-sizing: border-box;
+
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.column-main-new .main-card {
+  box-sizing: border-box;
+
+  width: 100% !important;
+  height: 100%;
+}
+
+.column-all-news {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+}
+
+.economy-text {
+  color: #3DBC9E !important;
+}
+
+.economy-bg {
+  background-color: #3DBC9E !important;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.policy-text {
+  color: #CC0000 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.policy-bg {
+  background-color: #CC0000 !important;
+  color: white;
+}
+
+.sport-text {
+  color: #FF5C00 !important;
+}
+
+.sport-bg {
+  background-color: #FF5C00 !important;
+  color: white;
+}
+
+.tecnology-text {
+  color: #1770C6 !important;
+}
+
+.tecnology-bg {
+  background-color: #1770C6 !important;
+  color: white;
+}
+
+
+.health-text {
+  color: #16C5D0 !important;
+}
+
+.health-bg {
+  background-color: #16C5D0 !important;
+  color: white;
 }
