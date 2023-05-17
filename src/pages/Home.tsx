@@ -24,19 +24,19 @@ function Home() {
       <div className="container-fluid content-body">
         <div className="container py-5">
           <div className="row">
-            <div className="col-6 column-four-news">
+            <div className="col-12 col-md-6 d-flex flex-column  flex-md-row flex-md-wrap justify-content-center justify-content-md-between  align-items-center">
               {news.length > 0 && <Card news={news[1]} />}
               {news.length > 0 && <Card news={news[2]} />}
               {news.length > 0 && <Card news={news[3]} />}
               {news.length > 0 && <Card news={news[4]} />}
             </div>
 
-            <div className="col-6 column-main-new">
+            <div className="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
               {news.length > 0 && <MainCard news={news[0]} />}
             </div>
           </div>
-          <div className="row">
-            <div className="col-12 mt-5 column-all-news">
+          <div className="row mt-4">
+            <div className="col-12 d-flex flex-column flex-md-row flex-md-wrap justify-content-center justify-content-md-between align-items-center">
               {news.reverse().map((news) => (
                 <Card news={news} key={news.id} />
               ))}

@@ -1,4 +1,8 @@
 import React from 'react';
+import {
+  Link
+} from "react-router-dom";
+import Swal from 'sweetalert2';
 
 function Footer() {
   return (
@@ -46,11 +50,20 @@ function Footer() {
               <div className="d-flex flex-column flex-sm-row w-100 gap-2">
                 <label htmlFor="newsletter1" className="visually-hidden">Email</label>
                 <input id="newsletter1" type="text" className="form-control" placeholder="Seu melhor Email" />
-                <button className="btn btn-primary" type="button">Registrar</button>
+                <button className="btn btn-primary" type="button" onClick={(e) => {
+                  e.preventDefault();
+                  Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'Email cadastrado com sucesso',
+                    showConfirmButton: false,
+                    timer: 1500
+                  })
+                }} >Registrar</button>
               </div>
             </form>
 
-            <p className="mt-4" ><a className="link-opacity-100" style={{ color: 'black', textDecoration: 'none' }} href="#">Área do Redator</a></p>
+            <p className="mt-4" ><Link className="link-opacity-100" style={{ color: 'black', textDecoration: 'none' }} to="/auth">Área do Redator</Link></p>
           </div>
         </div>
         <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
