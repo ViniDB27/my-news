@@ -8,9 +8,9 @@ import './App.css'
 
 import Home from './pages/Home'
 import Auth from './pages/Auth'
+import New from './pages/New'
 import Register from './pages/Register'
 
-import VLibras from '@moreiraste/react-vlibras';
 
 const router = createBrowserRouter([
   {
@@ -25,12 +25,15 @@ const router = createBrowserRouter([
     path: "/register",
     element: <Register />,
   },
+  {
+    path: "/new/:id",
+    element: <New />,
+  },
 ]);
 
 function App() {
   return (
     <>
-    <VLibras />
       <React.StrictMode>
         <RouterProvider router={router} />
       </React.StrictMode>

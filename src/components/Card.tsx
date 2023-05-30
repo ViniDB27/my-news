@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom"
 
 function Card({ news }: any) {
   return (
@@ -10,7 +10,7 @@ function Card({ news }: any) {
       <div className="card-body">
         <h5 className={`card-title ${news.category}-text`}>{news.title}</h5>
         <p className="card-text">{news.texto.substring(0, 100)}...</p>
-        <a href="#" className={`btn ${news.category}-bg`}>Continuar Lendo</a>
+        <Link to={`new/${news.id}`} className={`btn ${news.category}-bg`}>Continuar Lendo</Link>
       </div>
     </div>
   );
