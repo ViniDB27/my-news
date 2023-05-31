@@ -73,7 +73,7 @@ function Register() {
               </div>
               <div className="mb-3">
                 <label htmlFor="cpassword" className="form-label">Confirmar Senha</label>
-                <input type="cpassword" className="form-control" id="cpassword" />
+                <input type="password" className="form-control" id="cpassword" />
               </div>
               <div className="mb-3">
                 <label htmlFor="formFile" className="form-label">Imagem de Perfil</label>
